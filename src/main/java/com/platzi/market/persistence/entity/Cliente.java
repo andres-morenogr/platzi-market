@@ -5,7 +5,6 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-import java.math.BigDecimal;
 import java.util.List;
 
 @Entity
@@ -19,7 +18,7 @@ public class Cliente {
 
     private String apellidos;
 
-    private BigDecimal celular;
+    private Long celular;
 
     private String direccion;
 
@@ -53,11 +52,11 @@ public class Cliente {
         this.apellidos = apellidos;
     }
 
-    public BigDecimal getCelular() {
+    public Long getCelular() {
         return celular;
     }
 
-    public void setCelular(BigDecimal celular) {
+    public void setCelular(Long celular) {
         this.celular = celular;
     }
 
